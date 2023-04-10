@@ -8,15 +8,18 @@ public class Main {
         
         // 도화지의 크기 100 * 100
         int[][] arr = new int[100][100];
-        
+        // 색종이의 수
         int N = sc.nextInt();
         
+        // 색종이의 수만큼 만복
         for(int i = 0; i < N; i++) {
+        	// 색종이를 어디서부터 붙일지 좌표값을 받음
         	int Y = sc.nextInt();
         	int X = sc.nextInt();
         	// 각각 x,y부터 10*10의 크기로 색종이를 붙인다
         	for(int y = Y; y < Y+10; y++) {
         		for(int x = X; x < X+10; x++) {
+        			// 색종이를 붙이는 영역을 1로 바꾸어줌
         			arr[y][x] = 1;
         		}
         	}
