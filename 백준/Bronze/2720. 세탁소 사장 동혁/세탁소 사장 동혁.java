@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args){
 		// 입출력에 사용할 객체
         Scanner sc = new Scanner(System.in);
-        // 테스크 케이스 : T
+        // 테스트 케이스 : T
         int T = sc.nextInt();
 
         // 테스트 케이스만큼 반복
@@ -41,6 +41,8 @@ public class Main {
         	// 각각 거슬러 줘야할 개수 출력
         	System.out.println(Q + " " + D + " " + N + " " + P);
         }
-
+        
+        
+            
 	}
 }
