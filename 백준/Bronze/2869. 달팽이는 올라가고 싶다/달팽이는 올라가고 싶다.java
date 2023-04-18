@@ -13,7 +13,7 @@ public class Main {
 		
 		// 달팽이가 낮에 올라가는 미터 수 : A
 		int A = Integer.parseInt(st.nextToken());
-		// 달팽이가 밥에 미끄러지는 미터 수 : B
+		// 달팽이가 밤에 미끄러지는 미터 수 : B
 		int B = Integer.parseInt(st.nextToken());
 		// 정상의 미터 수
 		int V = Integer.parseInt(st.nextToken());
@@ -28,8 +28,6 @@ public class Main {
 		}
 		
 		System.out.println(day);
-
-
 		
 	}
 }
