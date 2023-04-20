@@ -1,18 +1,20 @@
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.*;
+import java.io.InputStreamReader;
 
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// 입출력에 사용할 객체
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
 		// 테스트 케이스 : T
-		int T = sc.nextInt();
+		int T = Integer.parseInt(br.readLine());
 
 		for(int i = 0; i < T; i++) {
 			// 숫자 : N
-			int N = sc.nextInt();
+			int N = Integer.parseInt(br.readLine());
 			// N의 0이 출력되는 횟수를 담는 배열 : n0
 			int[] n0 = new int[41];
 			// N의 1이 출력되는 횟수를 담는 배열 : n1
