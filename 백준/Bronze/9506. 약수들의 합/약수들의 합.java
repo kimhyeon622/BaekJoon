@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 public class Main {
@@ -6,12 +8,12 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		
 		// 입출력에 사용할 객체
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		// 무한반복
-		while(sc.hasNext()) {
+		while(true) {
 			// 숫자 : n, 약수를 저장할 배열 : arr, 약수의 개수만큼 카운트 : cnt, 약수들의 합 : sum
-			int n = sc.nextInt();
+			int n = Integer.parseInt(br.readLine());
 			int[] arr = new int[n + 1];
 			int cnt = 0;
 			int sum = 0;
