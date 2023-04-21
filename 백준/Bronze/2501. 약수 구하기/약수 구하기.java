@@ -1,15 +1,22 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		// 입출력에 사용할 객체
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		// 자연수 : N, 자연수 : K, 약수를 저장할 배열 : meaure, 약수가 나올때 증가 : cnt 
-		int N =sc.nextInt();
-		int K = sc.nextInt();
+		// 한 줄로 받았을때 나누어주기 위해 사용
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		// 자연수 : N, 자연수 : K, 약수를 저장할 배열 : meaure, 약수가 나올때 증가 : cnt
+		// st.nextToken()로 나누어 입력받기
+		int N = Integer.parseInt(st.nextToken());
+		int K = Integer.parseInt(st.nextToken());
 		int measure[] = new int[N+1];
 		int cnt = 0;
 		
