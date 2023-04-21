@@ -19,6 +19,11 @@ public class Main {
 			if(N % i == 0) {
 				measure[cnt++] = i;
 			}
+			// cnt와 K가 같아지면
+			if(cnt == K) {
+				// 반복문 나가기
+				break;
+			}
 		}
 		
 		// 약수의 개수가 K보다 많거나 같으면
