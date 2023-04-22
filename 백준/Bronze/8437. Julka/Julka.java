@@ -1,15 +1,23 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.BigInteger;
 import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) throws IOException {
 		
-        // 입출력에 사용할 객체
-		Scanner sc = new Scanner(System.in);
+		// 입출력에 사용할 객체
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		BigInteger Apple = sc.nextBigInteger();
-		BigInteger difference = sc.nextBigInteger();
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		// 총 사과 개수
+		BigInteger Apple = new BigInteger(st.nextToken());
+		st = new StringTokenizer(br.readLine());
+		// 서로 차이나는 사과 개수
+		BigInteger difference = new BigInteger(st.nextToken());
 		
 		// 사과를 차이만큼 빼주기
 		BigInteger subtract = Apple.subtract(difference);
