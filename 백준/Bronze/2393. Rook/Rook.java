@@ -2,6 +2,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		// 룩 출력
 		System.out.println("  ___  ___  ___");
 		System.out.println("  | |__| |__| |");
 		System.out.println("  |           |");
