@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Main {
 
@@ -25,7 +24,8 @@ public class Main {
 			// 3 - 2 = 1(cnt 3)
 			// 1 - 1 = 0(cnt 4)
 			
-			// 이렇게 X가 몇번만에 0이 되는지 == 몇번만에 Xcm의 막대기가 몇번만에 만들어 지는지
+            // 이렇게 0이 될때까지 반복적으로 빼준다
+			// X가 몇번만에 0이 되는지 == 몇번만에 Xcm의 막대기가 몇번만에 만들어 지는지
 			
 			if(X >= 64) {
 				cnt++;
