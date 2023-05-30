@@ -1,13 +1,21 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
+
+		// 관객에게 두 개의 숫자를 떠올려 보라고 한다.
+		// 그리고 두 숫자에 각각 1씩 더한 수를 서로 곱한 후
+		// 첫 번째 떠올린 수 만큼 뺴고
+		// 두 번째로 떠올린 수만큼 뺴고
+		// 또 처음 떠올렸던 두 수의 곱만큼 뺸 후에
+		// 그 결과를 N제곱한다
 		
-		// 입출력 객체
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		// 만약 관객이 5와 7을 생각한다고 하면
+		// 6 * 8 = 48
+		// 48 - 5 = 43
+		// 43 - 7 = 36
+		// 36 - 35 = 1
+		// 1 ^ N은 항상 1
+		// 어떠한 숫자를 생각해도 항상 1이 나온다
 		
 		// N이 몇이 나오든 1이 된다
 		System.out.println(1);
